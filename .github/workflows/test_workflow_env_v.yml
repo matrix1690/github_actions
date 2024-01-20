@@ -18,4 +18,4 @@ jobs:
         run: echo "ENV_VARIABLE = ${{ vars.ENV_VARIABLE }} ---- ENV_SECRET = ${{ secrets.ENV_SECRET }}"
 
       - name: Test variable de Repository
-        run: echo "REPO_VARIABLE = ${{REPO_VARIABLE}} ou ${{vars.REPO_VARIABLE}}  ----- REPO_SECRET = ${{REPO_SECRET}} ou ${{secrets.REPO_SECRET}}"
+        run: echo "REPO_VARIABLE = ${{vars.REPO_VARIABLE}}  ----- REPO_SECRET = ${{secrets.REPO_SECRET}}"
