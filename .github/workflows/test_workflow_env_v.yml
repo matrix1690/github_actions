@@ -6,6 +6,7 @@ env:
 jobs:
   greeting_job:
     runs-on: ubuntu-latest
+    environnement: GITHUB_TOKEN_PERSO
     env:
       Greeting: Salut ## Variable d'environnement pour la tâche
     steps:
