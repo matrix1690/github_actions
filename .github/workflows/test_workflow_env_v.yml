@@ -15,7 +15,7 @@ jobs:
           First_Name: Mona ## Variable d'environnement uniquement pour l'étape "Dites Salut Mona nous sommes lundi" de la tâche "greeting_job"
         
       - name: Test Variable Environnement
-        run: echo "ENV_VARIABLE = ${{ vars.ENV_VARIABLE }} ou ${{ ENV_VARIABLE }} ---- ENV_SECRET = ${{ secrets.ENV_SECRET }} ou ${{ ENV_SECRET }}"
+        run: echo "ENV_VARIABLE = ${{ vars.ENV_VARIABLE }} ---- ENV_SECRET = ${{ secrets.ENV_SECRET }}"
 
       - name: Test variable de Repository
-        run: echo "REPO_VARIABLE = ${{REPO_VARIABLE}} ou $REPO_VARIABLE ou ${{vars.REPO_VARIABLE}}  ----- REPO_SECRET = ${{REPO_SECRET}} ou $REPO_SECRET ou ${{secrets.REPO_SECRET}}"
+        run: echo "REPO_VARIABLE = ${{REPO_VARIABLE}} ou ${{vars.REPO_VARIABLE}}  ----- REPO_SECRET = ${{REPO_SECRET}} ou ${{secrets.REPO_SECRET}}"
