@@ -2,7 +2,7 @@ name: Pytest & Flake8 control push
 on: push
 jobs:
   qa:
-    name:Check tests
+    name: Check tests
     runs-on: ubuntu-20.04
     steps: 
       - name: Checkout on master
